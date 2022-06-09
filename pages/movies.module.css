@@ -1,0 +1,38 @@
+.moviesWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.movieImage {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.movie {
+  width: 30%;
+  margin: 20px auto 70px auto;
+  border-bottom: solid 1px #fff;
+  padding-bottom: 20px;
+}
+
+.movieTitleLink {
+  color: #fff;
+  text-decoration: none;
+}
+
+.moviesPageTitle {
+  text-align: center;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+@media screen and (max-width: 992px) {
+  .movie {
+    width: 90%;
+    margin: 10px auto 70px auto;
+    border-bottom: solid 1px #fff;
+    padding-bottom: 20px;
+  }
+}
