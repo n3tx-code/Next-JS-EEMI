@@ -3,7 +3,102 @@
 body {
     margin: 0;
     width: 100%;
-    background-color: black;
+    background-color: #262532;
     color: #fff;
     font-family: 'Roboto', sans-serif;
+}
+
+.movieImage {
+    width: auto;
+    height: 100%;
+    position: fixed;
+}
+
+.movieWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.movieImageWrapper {
+    height: 100vh;
+    width: auto;
+}
+
+.movieDetailWrapper {
+    width: 49%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+.movieDetailWrapper h2 {
+    margin: 32px 0px;
+    padding-left: 20px;
+    border-left: 3px solid #fff;
+    font-size: 30px;
+}
+
+.movieOverview {
+    text-align: justify;
+}
+
+.movieGenre {
+    padding: 10px;
+    display: inline-block;
+    margin-right: 20px;
+    background-color: #fff;
+    color: #262532;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.movieScore {
+    float: right;
+    padding: 12px;
+    border-radius: 100%;
+}
+
+.badScore {
+    background-color: #ef0a0a;
+}
+
+.goodScore {
+    background-color: #0aef0a;
+}
+
+@media screen and (max-width: 992px) {
+    .movieWrapper {
+        display: flex;
+        justify-content: initial;
+        flex-direction: column-reverse;
+    }
+
+    .movieImage {
+        position: initial;
+    }
+
+    .movieImage {
+        position: relative;
+        width: 80%;
+        height: auto;
+        margin: auto;
+    }
+
+    .movieImageWrapper {
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .movieDetailWrapper {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 32px;
+        margin-top: 32px;
+    }
+
+    .movieScore {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
 }
