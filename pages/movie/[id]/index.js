@@ -32,10 +32,10 @@ export default function Card({ movie }) {
       </motion.div>
       <motion.div animate={{ x: 0 }} initial={{ x: 700 }} transition={{ type: "spring", stiffness: 100 }} className="movieDetailWrapper">
         <h1>{movie.original_title}</h1>
+        <span className={`movieScore ${movie.vote_average > 7 ? "goodScore" : "badScore"}`}>{movie.vote_average}</span>
         {movie.genres.map(({ name }) => (
           <span key={movie.original_title + name} className="movieGenre">{name}</span>
         ))}
-        <span className={`movieScore ${movie.vote_average > 7 ? "goodScore" : "badScore"}`}>{movie.vote_average}</span>
         <p className="movieOverview">
           {movie.overview}
         </p>
