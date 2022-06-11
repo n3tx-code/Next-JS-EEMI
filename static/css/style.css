@@ -86,6 +86,15 @@ body {
     display: none;
 }
 
+.markDownContentWrapper {
+    width: 80%;
+    margin: 64px auto;
+}
+
+a {
+    color: #0abaef;
+}
+
 @media screen and (max-width: 992px) {
     .movieWrapper {
         display: flex;
