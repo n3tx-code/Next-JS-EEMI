@@ -6,6 +6,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@babel/runtime": "^7.18.3",
+    "@formspree/react": "^2.2.5",
     "axios": "0.26.1",
     "framer-motion": "^6.3.11",
     "next": "latest",

@@ -1,5 +1,6 @@
 import '../static/css/style.css';
 import Link from "next/link";
+import ContactForm from '../components/contact-form';
 
 const mobileMenuHandler = () => {
     document.querySelector(".navMenu").classList.toggle("navMenuActive");
@@ -42,6 +43,7 @@ export default function MyApp({ Component, pageProps }) {
                 </div>
             </div>
             <Component {...pageProps} />
+            <ContactForm />
         </>
     )
 }

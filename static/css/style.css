@@ -95,6 +95,57 @@ a {
     color: #0abaef;
 }
 
+.contactFormWrapper {
+    width: 50%;
+    margin: 64px auto;
+    border-top: 1px solid;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contactFormWrapper h2 {
+    text-align: center;
+}
+
+.contactFormEmail,
+.contactFormMessage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactFormSubmit {
+    width: 100%;
+}
+
+.contactFormWrapper label {
+    margin-bottom: 10px;
+}
+
+.contactFormWrapper input,
+.contactFormWrapper textarea {
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.contactFormWrapper input {
+    height: 30px;
+}
+
+.contactFormWrapper textarea {
+    height: 100px;
+}
+
+.contactFormSubmit button {
+    width: 30%;
+    margin: auto;
+    padding: 10px;
+    color: #262532;
+    float: right;
+}
+
 @media screen and (max-width: 992px) {
     .movieWrapper {
         display: flex;
