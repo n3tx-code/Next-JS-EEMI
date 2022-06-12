@@ -4,7 +4,7 @@ export default function ContactForm() {
     const [state, handleSubmit] = useForm("mgedqnlg");
 
     if (state.succeeded) {
-        return <p>Thanks for your submission!</p>;
+        return <p className="contactFormSucess">Thanks for your submission!</p>;
     }
 
     return (
